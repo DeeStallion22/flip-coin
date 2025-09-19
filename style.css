@@ -14,6 +14,15 @@
         font-family: "Kanit", sans-serif;
         font-style: normal;
         color:#ECEDF0 ;
+        background: linear-gradient(270deg, #ff7eb3, #ff758c, #42a5f5, #7e57c2);
+        background-size: 800% 800%;
+        animation: gradientBG 10s ease infinite;
+      }
+
+      @keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
       }
 
       section {
@@ -22,6 +31,12 @@
         align-items: center;
         gap: 2rem;
         margin-top: 4rem;
+      }
+
+
+      #display{
+        border-bottom: 2px black;
+        border:  4px #ECEDF0;
       }
 
       button {
@@ -53,6 +68,53 @@
       .author-info a {
         text-decoration: none;
       }
+
+      #headsimg {
+       width: 120px;
+       height: 120px;
+       animation: bounce 1s infinite ease-in-out;
+      }
+
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      
+      #head {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        animation: pulse 1.5s infinite;
+        text-shadow: 0 0 10px rgba(255,255,255,0.7);
+      }
+
+      @keyframes pulse {
+        0%   { transform: scale(1); opacity: 1; }
+        50%  { transform: scale(1.1); opacity: 0.8; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+
+      #tail {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        animation: pulse 1.5s infinite;
+        text-shadow: 0 0 10px rgba(255,255,255,0.7);
+      }
+
+      @keyframes pulse {
+        0%   { transform: scale(1); opacity: 1; }
+        50%  { transform: scale(1.1); opacity: 0.8; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+
+
+
 
 
 
